@@ -8,7 +8,7 @@ async function loadModel() {
     const load_button = document.getElementById("load-button");
     loader.style.display = "block";
 
-    model = await tf.loadLayersModel("../../output/mobilenet/model.json");
+    model = await tf.loadLayersModel("./output/mobilenet/model.json");
 
     loader.style.display = "none";
 
